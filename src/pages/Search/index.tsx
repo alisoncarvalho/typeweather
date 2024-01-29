@@ -6,7 +6,7 @@ import { SelectCity } from '../../components/SelectCity';
 export function Search() {
   const navigate = useNavigate();
 
-  function handleSelected(city) {
+  function handleSelected(city:any) {
     localStorage.setItem('@typewheather:city', JSON.stringify(city));
     navigate('/dashboard');
   }
